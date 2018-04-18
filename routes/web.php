@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//checking how to commit
