@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $todos = [
+      'Pick up milk',
+      'Clean thobe',
+      'Buy dates',
+      'Clean car',
+      'Study (lol)'
+    ];
+    return view('welcome', ['todos' => $todos]);
 });
 //checking how to commit
 
