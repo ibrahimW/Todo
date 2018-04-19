@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 //checking how to commit
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
