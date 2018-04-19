@@ -12,13 +12,7 @@
 */
 
 Route::get('/', function () {
-    $todos = [
-      'Pick up milk',
-      'Clean thobe',
-      'Buy dates',
-      'Clean car',
-      'Study (lol)'
-    ];
+    $todos = App\Task::all()->pluck('name')->all();
     return view('welcome', ['todos' => $todos]);
 });
 //checking how to commit
